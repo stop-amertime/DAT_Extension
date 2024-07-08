@@ -1,0 +1,40 @@
+:root {
+    --bg-color: #070F2B;
+    --txt-color: #9290C3;
+    --acc-color: #535C91;
+    --scrll-color: #1B1A55;
+    --nav-color: #04091a;
+}
+
+/* Set background color and text color for all elements except pre, span and code inside pre, and textarea */
+*:not(pre):not(pre span):not(pre code):not(textarea) {
+    background-color: var(--bg-color) !important;
+    color: var(--txt-color) !important;
+}
+
+.navbar.navbar-dark.navbar-inverse.bg-primary.navbar-expand-sm {
+    background-color: var(--nav-color) !important;
+    color: var(--txt-color) !important;
+}
+
+.navbar.navbar-dark.navbar-inverse.bg-primary.navbar-expand-sm > * {
+    background-color: var(--nav-color) !important;
+    color: var(--txt-color) !important;
+}
+
+textarea {
+    background-color: var(--acc-color) !important;
+}
+
+::-webkit-scrollbar {
+    background: var(--scrll-color) !important; /* color of the scrollbar track on hover */
+}
+
+/* Change the color of the scrollbar handle */
+::-webkit-scrollbar-thumb {
+    background: var(--acc-color) !important; /* color of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--txt-color) !important; /* color of the scrollbar handle */
+}

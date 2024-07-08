@@ -10,12 +10,10 @@
       "128": "images/icon128.png"
     }
   },
-  "background": {
-  },
   "content_scripts": [
     {
       "matches": ["https://app.dataannotation.tech/*"],
-      "js": ["./scripts/darkMode.js"]
+      "js": ["./scripts/backGround.js"]
     },
     {
       "matches": ["https://app.dataannotation.tech/workers/tasks/*"],
